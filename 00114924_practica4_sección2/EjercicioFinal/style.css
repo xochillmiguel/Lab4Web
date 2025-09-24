@@ -1,0 +1,67 @@
+:root {
+  --beige: #faf3e0;
+  --gris: #2c2c2c;
+  --terracota: #b3541e;
+  --marron: #8c3f2b;
+  --blanco: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--beige);
+  color: var(--gris);
+  margin: 0;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: var(--blanco);
+  border: 2px solid var(--terracota);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: aparecer 1.5s ease;
+}
+
+h1 {
+  text-align: center;
+  color: var(--terracota);
+}
+
+label, input, button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid var(--marron);
+  border-radius: 5px;
+}
+
+button {
+  background: var(--terracota);
+  color: var(--blanco);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--marron);
+}
+
+#salida {
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background: var(--beige);
+}
+
+@keyframes aparecer {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}

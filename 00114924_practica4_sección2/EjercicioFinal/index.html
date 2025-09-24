@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio Final - Guía 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Recordatorios de la Semana</h1>
+
+    <div class="ingreso">
+      <label for="campo-dia">Ingrese un día de la semana (en minúsculas):</label>
+      <input type="text" id="campo-dia" placeholder="ej: lunes">
+
+      <label for="campo-nota">Mensaje personalizado:</label>
+      <input type="text" id="campo-nota" placeholder="Digite su mensaje">
+    </div>
+
+    <div class="acciones">
+      <button onclick="mostrarActividad()">Ver recordatorio</button>
+    </div>
+
+    <div id="salida"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
